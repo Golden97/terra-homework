@@ -18,7 +18,7 @@ import { MnemonicKey } from '@terra-money/terra.js';
 
 const wallets = {
   wallet1: client.wallet(new MnemonicKey({
-    mnemonic: "confirm electric wink vocal nut flat globe machine gown million develop quiz dune bar coil favorite need skin iron husband mutual shoulder depth today",
+    mnemonic: "marriage mixture claw champion degree attack fragile stem wolf wise group favorite group drum expand urban clip innocent doctor sting fall liquid shy quit",
   })),
   wallet2: client.wallet(new MnemonicKey({
     mnemonic: "warm lucky circle bicycle quote lemon omit one robot include fruit fix coach parrot identify glance foil random fox tornado diagram twist flat picnic",
