@@ -10,16 +10,12 @@ import {
 const cw20Contract = "terra1sex6wuv9sarmkva8ylccxaqlr5cwt0urx86sd6";
 const walletAddress = wallets.wallet1.key.accAddress;
 
-//const response = await client.wasm.contractQuery(cw20Contract, { transfer: { recipient: "terra1cvuvzffnjrsz96ee6ms0pr9lgpwpgre4fqzjwl", amount: 1000 }});
-
-
 const msg = new MsgExecuteContract(
     walletAddress,
     cw20Contract,
     {
         transfer: { recipient: "terra1cvuvzffnjrsz96ee6ms0pr9lgpwpgre4fqzjwl", amount: "1000" },
     },
-    //new Coins({ uluna: amount }),
   );
   
   const tx = await wallets.wallet1.createAndSignTx({ msgs: [msg] });
